@@ -1,0 +1,346 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8758568653431340363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM
+  m_EditorClassIdentifier: 
+  Path: event:/BGM
+  Guid:
+    Data1: 1404602792
+    Data2: 1139453045
+    Data3: 1236956046
+    Data4: 1513128182
+  Banks:
+  - {fileID: 4721368125664343698}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6597599158363708248}
+  - {fileID: -3566389652461732288}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58775
+--- !u!114 &-7073960241899306906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Speaky.bank
+  m_EditorClassIdentifier: 
+  Path: AudioDungeon/Build/Desktop/Speaky.bank
+  Name: Speaky
+  StudioPath: bank:/Speaky
+  lastModified: 638941779923286612
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4809322552158002459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: AudioDungeon/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638980505972794175
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3566389652461732288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/MusicZone
+  m_EditorClassIdentifier: 
+  Name: MusicZone
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2133464263
+    data2: 2849993044
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3427654364099428881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps
+  Guid:
+    Data1: 420932717
+    Data2: 1283744530
+    Data3: -1608946775
+    Data4: -708978669
+  Banks:
+  - {fileID: -7073960241899306906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2248115621418960380}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 598
+--- !u!114 &-2248115621418960380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/ReverbValue
+  m_EditorClassIdentifier: 
+  Name: ReverbValue
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 2410166394
+    data2: 3518665300
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1761883839450890410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ReverbSize
+  m_EditorClassIdentifier: 
+  Name: ReverbSize
+  StudioPath: parameter:/ReverbSize
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 1663498645
+    data2: 2291823514
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 7895760472464076862}
+  - {fileID: -4809322552158002459}
+  - {fileID: -7073960241899306906}
+  - {fileID: 4721368125664343698}
+  EditorEvents:
+  - {fileID: 7093958555802885377}
+  - {fileID: -3427654364099428881}
+  - {fileID: -8758568653431340363}
+  EditorParameters:
+  - {fileID: -1761883839450890410}
+  - {fileID: 8569936429427418781}
+  MasterBanks:
+  - {fileID: -4809322552158002459}
+  StringsBanks:
+  - {fileID: 7895760472464076862}
+  cacheVersion: 131849
+  cacheTime: 638980505982094594
+  SerializableEventsDict:
+  - key: event:/SayANumber
+    index: 0
+  - key: event:/Footsteps
+    index: 1
+  - key: event:/BGM
+    index: 2
+--- !u!114 &4721368125664343698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: AudioDungeon/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638980505982094594
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5296430800958874815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SayANumber/ReverbValue
+  m_EditorClassIdentifier: 
+  Name: ReverbValue
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 2410166394
+    data2: 3518665300
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6597599158363708248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/EscMenu
+  m_EditorClassIdentifier: 
+  Name: EscMenu
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3618482521
+    data2: 2786215883
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Off
+  - On
+  Exists: 1
+--- !u!114 &7093958555802885377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SayANumber
+  m_EditorClassIdentifier: 
+  Path: event:/SayANumber
+  Guid:
+    Data1: 1160822299
+    Data2: 1188471309
+    Data3: -1967926873
+    Data4: 1560007313
+  Banks:
+  - {fileID: -7073960241899306906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5296430800958874815}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 809
+--- !u!114 &7895760472464076862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: AudioDungeon/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638980505972804806
+  FileSizes:
+  - Name: 
+    Value: 1144
+  Exists: 1
+--- !u!114 &8569936429427418781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EscMenu
+  m_EditorClassIdentifier: 
+  Name: EscMenu
+  StudioPath: parameter:/EscMenu
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3618482521
+    data2: 2786215883
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Off
+  - On
+  Exists: 1
