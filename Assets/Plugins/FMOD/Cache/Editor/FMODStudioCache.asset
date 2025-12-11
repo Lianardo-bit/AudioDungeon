@@ -44,7 +44,7 @@ MonoBehaviour:
   Path: AudioDungeon/Build/Desktop/Speaky.bank
   Name: Speaky
   StudioPath: bank:/Speaky
-  lastModified: 638941779923286612
+  lastModified: 639010206387673413
   FileSizes: []
   Exists: 1
 --- !u!114 &-4809322552158002459
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: AudioDungeon/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638980505972794175
+  lastModified: 639010206387467351
   FileSizes: []
   Exists: 1
 --- !u!114 &-3566389652461732288
@@ -194,7 +194,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7895760472464076862}
   cacheVersion: 131849
-  cacheTime: 638980505982094594
+  cacheTime: 639010206387673413
   SerializableEventsDict:
   - key: event:/SayANumber
     index: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: AudioDungeon/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638980505982094594
+  lastModified: 639010206387606152
   FileSizes: []
   Exists: 1
 --- !u!114 &5296430800958874815
@@ -313,7 +313,7 @@ MonoBehaviour:
   Path: AudioDungeon/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638980505972804806
+  lastModified: 639010206387475644
   FileSizes:
   - Name: 
     Value: 1144
