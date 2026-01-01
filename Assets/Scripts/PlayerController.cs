@@ -1,5 +1,8 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // For the new Input System
+using UnityEngine.InputSystem; // New Input System
+using FMODUnity;
+using FMOD.Studio;
+using System.Collections; // Needed for coroutines
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -22,6 +25,14 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     public Transform groundCheck;
+
+    [Header("FMOD Events")]
+    [SerializeField] private EventReference bombSound;
+    [SerializeField] private EventReference bombSnapshot;
+
+    [Header("Prefabs")]
+    [SerializeField] private GameObject speechBubblePrefab;
+    [SerializeField] private Transform canvasTransform; // drag your Canvas from Hierarchy here
 
     private CharacterController controller;
     private Vector2 moveInput;
@@ -47,6 +58,12 @@ public class PlayerController : MonoBehaviour
         HandleGrounding();
         HandleMovement();
         HandleLook();
+
+        // E key check (new Input System)
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            TriggerBomb();
+        }
     }
 
     private void HandleGrounding()
@@ -94,6 +111,73 @@ public class PlayerController : MonoBehaviour
 
         // Yaw (player body left/right)
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    // Bomb trigger logic
+    private void TriggerBomb()
+    {
+        // Play bomb sound
+        RuntimeManager.PlayOneShot(bombSound);
+
+        // Start snapshot (optional)
+        EventInstance snapshot = RuntimeManager.CreateInstance(bombSnapshot);
+        snapshot.start();
+        snapshot.release();
+
+        // Find Canvas in scene if not assigned
+        if (canvasTransform == null)
+        {
+            Canvas canvas = FindObjectOfType<Canvas>();
+            if (canvas != null) canvasTransform = canvas.transform;
+        }
+
+        // Show speech bubble with bounce animation
+        if (speechBubblePrefab != null && canvasTransform != null)
+        {
+            GameObject bubble = Instantiate(speechBubblePrefab, canvasTransform);
+            bubble.transform.localScale = Vector3.zero; // start invisible
+            bubble.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // center of screen
+            StartCoroutine(AnimateBubble(bubble));
+        }
+    }
+
+    // Coroutine for bounce overshoot zoom in/out animation
+    private IEnumerator AnimateBubble(GameObject bubble)
+    {
+        // Zoom in with overshoot
+        float t = 0;
+        while (t < 1f)
+        {
+            t += Time.deltaTime * 4; // speed factor
+            float scale = Mathf.Lerp(0f, 1.2f, t); // overshoot to 1.2
+            bubble.transform.localScale = Vector3.one * scale;
+            yield return null;
+        }
+
+        // Ease back to normal size
+        t = 0;
+        while (t < 1f)
+        {
+            t += Time.deltaTime * 4;
+            float scale = Mathf.Lerp(1.2f, 1f, t);
+            bubble.transform.localScale = Vector3.one * scale;
+            yield return null;
+        }
+
+        // Wait before disappearing
+        yield return new WaitForSeconds(1.5f);
+
+        // Zoom out
+        t = 0;
+        while (t < 1f)
+        {
+            t += Time.deltaTime * 4;
+            float scale = Mathf.Lerp(1f, 0f, t);
+            bubble.transform.localScale = Vector3.one * scale;
+            yield return null;
+        }
+
+        Destroy(bubble);
     }
 
     // Input System Callbacks

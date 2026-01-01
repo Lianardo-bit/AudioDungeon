@@ -47,6 +47,33 @@ MonoBehaviour:
   lastModified: 639010206387673413
   FileSizes: []
   Exists: 1
+--- !u!114 &-5858904245202242475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BombExplosion
+  m_EditorClassIdentifier: 
+  Path: event:/BombExplosion
+  Guid:
+    Data1: -302063535
+    Data2: 1186240989
+    Data3: 367733414
+    Data4: 492109004
+  Banks:
+  - {fileID: 8091576379360352265}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2380
 --- !u!114 &-4809322552158002459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,30 +205,71 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 7895760472464076862}
-  - {fileID: -4809322552158002459}
-  - {fileID: -7073960241899306906}
-  - {fileID: 4721368125664343698}
+  - {fileID: 3968934405243939133}
+  - {fileID: 8091576379360352265}
+  - {fileID: 5701588964360638293}
   EditorEvents:
-  - {fileID: 7093958555802885377}
-  - {fileID: -3427654364099428881}
-  - {fileID: -8758568653431340363}
-  EditorParameters:
-  - {fileID: -1761883839450890410}
-  - {fileID: 8569936429427418781}
+  - {fileID: -5858904245202242475}
+  - {fileID: 4599032958876394298}
+  EditorParameters: []
   MasterBanks:
-  - {fileID: -4809322552158002459}
+  - {fileID: 5701588964360638293}
   StringsBanks:
-  - {fileID: 7895760472464076862}
+  - {fileID: 3968934405243939133}
   cacheVersion: 131849
-  cacheTime: 639010206387673413
+  cacheTime: 639026282558206114
   SerializableEventsDict:
-  - key: event:/SayANumber
+  - key: event:/BombExplosion
     index: 0
-  - key: event:/Footsteps
+  - key: snapshot:/BombSnapshot
     index: 1
-  - key: event:/BGM
-    index: 2
+--- !u!114 &3968934405243939133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD/SnapShot/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639026266153963415
+  FileSizes:
+  - Name: 
+    Value: 874
+  Exists: 1
+--- !u!114 &4599032958876394298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/BombSnapshot
+  m_EditorClassIdentifier: 
+  Path: snapshot:/BombSnapshot
+  Guid:
+    Data1: -244135565
+    Data2: 1162454850
+    Data3: -726591055
+    Data4: -1245407867
+  Banks:
+  - {fileID: 5701588964360638293}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4721368125664343698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +311,24 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &5701588964360638293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD/SnapShot/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639026266153936110
+  FileSizes: []
   Exists: 1
 --- !u!114 &6597599158363708248
 MonoBehaviour:
@@ -317,6 +403,24 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 1144
+  Exists: 1
+--- !u!114 &8091576379360352265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bomb.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD/SnapShot/Build/Desktop/Bomb.bank
+  Name: Bomb
+  StudioPath: bank:/Bomb
+  lastModified: 639026282558206114
+  FileSizes: []
   Exists: 1
 --- !u!114 &8569936429427418781
 MonoBehaviour:
